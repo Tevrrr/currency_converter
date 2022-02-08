@@ -6,14 +6,14 @@ import { getExchangeRates} from '../../redux/features/ExchangeRatesSlice.js'
 
 const Header = () => {
     const exchangeRates = useSelector(getExchangeRates);
-	const [USD, setUSD] = useState(exchangeRates.rates.USD);
-	const [EUR, setEUR] = useState(exchangeRates.rates.EUR);
-	const [UAH, setUAH] = useState(exchangeRates.rates.UAH);
+	const [USD, setUSD] = useState(exchangeRates.USD);
+	const [EUR, setEUR] = useState(exchangeRates.EUR);
+	const [UAH, setUAH] = useState(exchangeRates.UAH);
 
 	useEffect(() => {
-        setUSD(exchangeRates.rates.USD);
-        setEUR(exchangeRates.rates.EUR);
-        setUAH(exchangeRates.rates.UAH);
+        setUSD(exchangeRates.USD);
+        setEUR(exchangeRates.EUR);
+        setUAH(exchangeRates.UAH);
 	}, [exchangeRates]);
     return (
 		<header className={styles.header}>
