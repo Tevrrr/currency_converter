@@ -15,9 +15,7 @@ const CurrencyString = ({
 	recalculate,
 }) => {
 	const exchangeRates = useSelector(getExchangeRates);
-	const [allCharCode, setAllCharCode] = useState(
-		Object.keys(exchangeRates)
-	);
+	const [allCharCode, setAllCharCode] = useState(Object.keys(exchangeRates));
 
 	useEffect(() => {
 		setAllCharCode(Object.keys(exchangeRates));
@@ -33,15 +31,15 @@ const CurrencyString = ({
 
 			if (!e.target.value) {
 				setValue(e.target.value);
-            }
-            recalculate(e.target.value, charCode);
+			}
+			recalculate(e.target.value, charCode);
 		};
 	};
 
 	const getCharCode = () => {
 		return (e) => {
-            setCharCode(e.target.value);
-            recalculate(value, e.target.value);
+			setCharCode(e.target.value);
+			recalculate(value, e.target.value);
 		};
 	};
 

@@ -1,5 +1,7 @@
-.header{
-    display: flex;
-    justify-content: space-around;
-    font-weight: 700;
+/** @format */
+
+.header {
+	display: flex;
+	justify-content: space-around;
+	font-weight: 700;
 }

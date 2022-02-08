@@ -12,16 +12,16 @@ import {
 } from '../../redux/features/ExchangeRatesSlice';
 
 const Converter = () => {
-    const dispatch = useDispatch();
+	const dispatch = useDispatch();
 	const exchangeRates = useSelector(getExchangeRates);
 	const [leftValue, setLeftValue] = useState(0);
 	const [rightValue, setRightValue] = useState(0);
 	const [leftCharCode, setLeftCharCode] = useState('UAH');
-    const [rightCharCode, setRightCharCode] = useState('USD');
-    
-    useEffect(() => {
-        dispatch(fetchExchangeRates());
-        console.log(1);
+	const [rightCharCode, setRightCharCode] = useState('USD');
+
+	useEffect(() => {
+		dispatch(fetchExchangeRates());
+		console.log(1);
 	}, [dispatch]);
 
 	const recalculateRight = (value, сharCode) => {

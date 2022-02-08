@@ -5,7 +5,7 @@
 	--border-focus-color: #34383d;
 	width: 100%;
 	display: flex;
-    font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .font,
@@ -13,11 +13,12 @@
 .select {
 	font-size: inherit;
 	font-family: inherit;
-    background: #f1f5f9;
+	color: inherit;
+	background: #f1f5f9;
 }
 
 .input {
-    width: 70%;
+	width: 70%;
 
 	flex-grow: 1;
 
@@ -28,8 +29,8 @@
 
 .input::-webkit-outer-spin-button,
 .input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 .select {

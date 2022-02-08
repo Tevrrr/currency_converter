@@ -1,9 +1,11 @@
-.HorizontalLine{
-    height: 2px;
-    width: 100%;
+/** @format */
 
-    margin: .25rem 0;
+.HorizontalLine {
+	height: 2px;
+	width: 100%;
 
-    background-color: #64748b;
-    opacity: .5;
+	margin: 0.25rem 0;
+
+	background-color: #64748b;
+	opacity: 0.5;
 }

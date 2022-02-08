@@ -10,7 +10,7 @@ const CurrencyConverter = () => {
 	return (
 		<div className={styles.CurrencyConverter}>
 			<Header />
-			<HorizontalLine/>
+			<HorizontalLine />
 			<Converter />
 		</div>
 	);

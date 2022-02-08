@@ -1,37 +1,37 @@
 /** @format */
 
 .Arrows {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.1rem;
 }
 
 .LeftArrows::after,
 .RightArrows::after {
-    content: "";
-    display: block;
-    width: 3px;
-    height: 10px;
-    background: #000;
+	content: '';
+	display: block;
+	width: 0.2rem;
+	height: 0.6rem;
+	background: #0f172a;
 }
 
 .LeftArrows::before,
 .RightArrows::before {
-    content: "";
-    display: block;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 7px solid #0f172a;
+	content: '';
+	display: block;
+	border-left: 0.35rem solid transparent;
+	border-right: 0.35rem solid transparent;
+	border-bottom: 0.5rem solid #0f172a;
 }
 
 .LeftArrows,
 .RightArrows {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .RightArrows {
-    transform: rotate(180deg);
+	transform: rotate(180deg);
 }

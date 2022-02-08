@@ -1,7 +1,9 @@
-.Converter{
-    display: flex;
-    flex-direction: column;
+/** @format */
 
-    margin: 0.5rem 0;
-    gap: .5rem;
+.Converter {
+	display: flex;
+	flex-direction: column;
+
+	margin: 0.5rem 0    ;
+	gap: 0.5rem;
 }
