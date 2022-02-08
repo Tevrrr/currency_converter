@@ -1,0 +1,37 @@
+/** @format */
+
+.Arrows {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.LeftArrows::after,
+.RightArrows::after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 10px;
+    background: #000;
+}
+
+.LeftArrows::before,
+.RightArrows::before {
+    content: "";
+    display: block;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 7px solid #0f172a;
+}
+
+.LeftArrows,
+.RightArrows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.RightArrows {
+    transform: rotate(180deg);
+}
